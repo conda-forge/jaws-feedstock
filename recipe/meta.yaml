@@ -9,12 +9,13 @@ source:
   sha256: 678bcc470249959163ba382785079ac3f3fe1c42b790eb488aa707f608be6c9f
 
 build:
+  noarch: python
   #noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - pandas
