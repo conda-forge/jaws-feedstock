@@ -27,6 +27,7 @@ requirements:
     - netcdf4
     - matplotlib
     - netcdf4
+    - climlab
 
 test:
   imports:
@@ -35,6 +36,7 @@ test:
     - jaws.gcnet2nc
     - jaws.imau2nc
     - jaws.promice2nc
+    - climlab
 
 about:
   home: https://github.com/jaws/jaws
