@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jaws/jaws/archive/{{ version }}.tar.gz
-  sha256: 579064a0732730df25569e44e4b7c03ed85344b040efd1e910146de214bcd05f
+  sha256: 3a5c8f690b84b9fdc55a052542bef6719f3fb38610bd9ec7412cfdfa7530456e
 
 build:
   #noarch: python
