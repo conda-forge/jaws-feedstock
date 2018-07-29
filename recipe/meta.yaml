@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - pandas
-    - numpy >=1.11
+    - numpy >=1.12
     - xarray
     - pytz
     - netcdf4
