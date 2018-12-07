@@ -35,9 +35,6 @@ test:
   imports:
     - jaws
     - jaws.aaws2nc
-    - jaws.gcnet2nc
-    - jaws.imau2nc
-    - jaws.promice2nc
 
 about:
   home: https://github.com/jaws/jaws
