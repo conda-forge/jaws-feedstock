@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.1" %}
 
 package:
   name: jaws
@@ -10,7 +10,7 @@ source:
 
 build:
   #noarch: python
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
