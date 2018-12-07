@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: jaws
@@ -35,6 +35,9 @@ test:
   imports:
     - jaws
     - jaws.aaws2nc
+    - jaws.gcnet2nc
+    - jaws.imau2nc
+    - jaws.promice2nc
 
 about:
   home: https://github.com/jaws/jaws
