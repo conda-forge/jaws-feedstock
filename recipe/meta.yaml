@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.2" %}
 
 package:
   name: jaws
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/jaws/jaws/archive/{{ version }}.tar.gz
-  sha256: 0b1aca5f4d7bfdfac92af0f0f7a6b3dfc3d8f2fcaa774ad345ea602daea9c69c
+  sha256: fa0d52d737392bc8074a6136ef39efb587266805d48fb7fa79704c1293162a87
 
 build:
   #noarch: python
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - python
     - pip
     - pandas
+    - scipy
   run:
     - python
     - pandas
@@ -27,14 +28,13 @@ requirements:
     - netcdf4
     - matplotlib
     - netcdf4
+    - scipy
+    - requests
 
 test:
   imports:
     - jaws
     - jaws.aaws2nc
-    - jaws.gcnet2nc
-    - jaws.imau2nc
-    - jaws.promice2nc
 
 about:
   home: https://github.com/jaws/jaws
