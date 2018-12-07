@@ -27,6 +27,8 @@ requirements:
     - netcdf4
     - matplotlib
     - netcdf4
+    - scipy
+    - requests
 
 test:
   imports:
