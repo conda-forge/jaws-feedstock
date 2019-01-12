@@ -1,4 +1,4 @@
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: jaws
@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - pandas
-    - numpy >=1.12
+    - numpy >=1.15.2
     - xarray
     - pytz
     - netcdf4
