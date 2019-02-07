@@ -19,6 +19,7 @@ requirements:
     - pip
     - pandas
     - scipy
+    - numpy >=1.15.2
   run:
     - python
     - pandas
