@@ -1,4 +1,4 @@
-{% set version = "0.6.5" %}
+{% set version = "0.7" %}
 
 package:
   name: jaws
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jaws/jaws/archive/{{ version }}.tar.gz
-  sha256: 905c865504df13e82efcea2c5860b21b6cd44093c1fd74a7a54fb5cfeae59a7d
+  sha256: 24f1f545c89bc15d6ca94beaca062cc3aa494582d7d7c32251cde66f6e276e77
 
 build:
   #noarch: python
@@ -19,6 +19,7 @@ requirements:
     - pip
     - pandas
     - scipy
+    - numpy >=1.15.2
   run:
     - python
     - pandas
