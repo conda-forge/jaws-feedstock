@@ -21,6 +21,7 @@ requirements:
     - scipy
     - numpy >=1.15.2
     - requests
+    - xarray
   run:
     - python
     - pandas
