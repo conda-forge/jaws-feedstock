@@ -20,6 +20,7 @@ requirements:
     - pandas
     - scipy
     - numpy >=1.15.2
+    - requests
   run:
     - python
     - pandas
