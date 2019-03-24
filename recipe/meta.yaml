@@ -14,9 +14,14 @@ build:
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  host:
+  build:
     - python
     - pip
+    - pandas
+    - scipy
+    - numpy >=1.15.2
+    - requests
+    - xarray
   run:
     - python
     - pandas
