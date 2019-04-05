@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.8.1" %}
 
 package:
   name: jaws
@@ -9,7 +9,6 @@ source:
   sha256: e2b51f53ec0f28ac513693a69488e77ba6246f78324fbbf1c866e8a7dfc3d781
 
 build:
-  #noarch: python
   number: 0
   # script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
