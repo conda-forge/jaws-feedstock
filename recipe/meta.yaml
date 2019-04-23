@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: jaws
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jaws/jaws/archive/{{ version }}.tar.gz
-  sha256: c86aad6d9c82145c215b4d11fbeff6fc13910a3b2d15003e5210b1d0f39a42dc
+  sha256: a1a88035c1dc270636a97e56b99955e943f717383364d17328548813ee4e17fc
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - numpy >=1.15.2
     - requests
     - xarray
+    - metpy
   run:
     - python
     - pandas
@@ -32,6 +33,7 @@ requirements:
     - netcdf4
     - scipy
     - requests
+    - metpy
 
 test:
   imports:
