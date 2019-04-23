@@ -21,6 +21,7 @@ requirements:
     - numpy >=1.15.2
     - requests
     - xarray
+    - metpy
   run:
     - python
     - pandas
@@ -32,6 +33,7 @@ requirements:
     - netcdf4
     - scipy
     - requests
+    - metpy
 
 test:
   imports:
