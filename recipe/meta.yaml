@@ -9,7 +9,7 @@ source:
   sha256: a1a88035c1dc270636a97e56b99955e943f717383364d17328548813ee4e17fc
 
 build:
-  number: 0
+  number: 1
   # script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - numpy >=1.15.2
     - requests
     - xarray
-    - metpy
+    - metpy >=0.10.0
   run:
     - python
     - pandas
@@ -33,7 +33,7 @@ requirements:
     - netcdf4
     - scipy
     - requests
-    - metpy
+    - metpy >=0.10.0
 
 test:
   imports:
