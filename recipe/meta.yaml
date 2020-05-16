@@ -9,7 +9,7 @@ source:
   sha256: 172f216d1559f9f02619eee28a9fea6cb63f0d18678e98e757951cd85f4c8c34
 
 build:
-  number: 0
+  number: 1
   # script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -29,7 +29,7 @@ requirements:
     - xarray
     - pytz
     - netcdf4
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - scipy
     - requests
