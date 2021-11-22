@@ -10,20 +10,28 @@ source:
 
 build:
   number: 3
-  # script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
+  entry_points:
+    - jaws = jaws.jaws:start
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
+    # imports itself at install time so we need all deps here
     - pandas
-    - scipy
     - numpy >=1.15.2
-    - requests
     - xarray
+    - pytz
+    - netcdf4
+    - matplotlib-base
+    - netcdf4
+    - scipy
+    - requests
     - metpy >=0.10.0
   run:
-    - python
+    - python >=3.6
     - pandas
     - numpy >=1.15.2
     - xarray
@@ -42,10 +50,15 @@ test:
     - jaws.gcnet2nc
     - jaws.imau2nc
     - jaws.promice2nc
+  commands:
+    - jaws -h
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/jaws/jaws
-  license: Apache, Version 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Justify idiosyncratic ASCII AWS formats into analyzable netCDF formats.'
